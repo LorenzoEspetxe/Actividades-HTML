@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog con Artículos y Contactos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Mi Blog de Programación</h1>
+        <nav aria-label="Navegación principal">
+            <ul> <!-- (<ul>)"Unordered List" (lista desordenada). Se usa para crear una lista de elementos, en este caso, una lista de enlaces.-->
+                <li><a href="#">Inicio</a></li> <!--(<a>) Esta es la etiqueta de enlace o "anchor". El atributo href="#" indica la dirección a la que te llevará el enlace-->
+                <li><a href="#">Articulos</a></li> <!--(<li>)"List Item" (elemento de lista). Representa un elemento individual dentro de una lista.-->
+                <li><a href="#">Contacto</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main tabindex="0">
+        <article>
+            <h2>La importancia de la Semántica HTML</h2>
+            <p>La semántica HTML se refiere al uso de etiquetas que transmiten el significado del contenido, no solo su apariencia. Esto ayuda a los navegadores y tecnologías de asistencia a entender la estructura de la página.</p>
+            <p>Usar etiquetas como `header`, `main`, `article`, `aside` y `footer` en lugar de simplemente `div` es una buena práctica de accesibilidad.</p>
+           
+            <h3>Beneficios de la Semántica</h3>
+            <ul>
+                <li>Mejora la **accesibilidad** para usuarios con discapacidades.</li>
+                <li>Optimiza el **SEO** (Search Engine Optimization).</li>
+                <li>Hace el código más legible y **fácil de mantener**.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Introducción a las Tablas HTML</h2>
+            <p>Las tablas HTML son esenciales para mostrar datos tabulares de forma clara. La estructura adecuada es clave para la accesibilidad.</p>
+            <h3>Elementos clave</h3>
+            <ol> <!--(ol) Se usa para crear una lista ordenada (del inglés ordered list). A diferencia de las listas no ordenadas (<ul>) que usan viñetas, las listas ordenadas (<ol>) usan números, letras o números romanos para enumerar los elementos.-->
+                <li>`table`: El contenedor principal.</li>
+                <li>`thead`: Agrupa las filas de encabezado.</li>
+                <li>`tbody`: Agrupa las filas de datos.</li>
+                <li>`tr`: Representa una fila.</li>
+                <li>`th`: Define una celda de encabezado.</li>
+                <li>`td`: Define una celda de datos.</li>
+            </ol>
+        </article>
+
+        <aside>
+            <h3>Enlaces relacionados</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">MDN Web Docs (HTML)</a></li>
+                <li><a href="https://www.w3.org/TR/html52/" target="_blank">Principios de Accesibilidad (W3C)</a></li>
+            </ul>
+        </aside>
+
+        <footer>
+            <h3>Tabla de Contactos</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Cargo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ana Garcia</td>
+                        <td>ana.g@email.com</td>
+                        <td>Gerente de Contenido</td>
+                    </tr>
+                    <tr>
+                        <td>Luis Pérez</td>
+                        <td>luis.p@email.com</td>
+                        <td>Desarrollador Web</td>
+                    </tr>
+                    <tr>
+                        <td>Marta Ruiz</td>
+                        <td>marta.r@email.com</td>
+                        <td>Diseñadora UI/UX</td>
+                    </tr>
+                </tbody>
+            </table>
+        </footer>
+
+    </main>
+    
+</body>
+
+</html>
